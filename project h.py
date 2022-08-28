@@ -121,6 +121,11 @@ def cap():
             for i in range(0,len(a3)):
                 a4[j]+=(a1[a3[i]][j])
                 a4[j]+=" "
+        ch=input("Enter Character In Output : ")
+        print()
+        for q in range(0,5):
+            for w in range(0,len(a4[q])):
+                a4[q] = a4[q].replace('1', ch)
         for m in range(0,5):
             print(a4[m])
     else:print("Invalid Choice...")
